@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8">
+        <title>Our First Webpage</title>
+        <link rel="shortcut icon" href="../images/favicon.png">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Roboto+Condensed&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <header class="fixed-bar">
+                    <h1 class="page-title">Mike's World</h1>
+                </header>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="../index.html">Home</a></li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <form class="form">
+                    <div class="name">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name" oninput="checkInput()">
+                    </div>
+                    <div class="email">
+                        <label for="mail">Mail</label><br>
+                        <input type="email" name="email" id="mail" oninput="checkInput()">
+                    </div>
+                    <div class="message">
+                            <label for="message">Message</label><br>
+                            <textarea name="message" id="message" cols="30" rows="10" oninput="checkInput()"></textarea>
+                    </div>
+                    <button class="submit" disabled type="submit">Submit</button>
+
+                </form>
+            </main>
+            <script src="main.js"></script>
+    </body>
+</html>
